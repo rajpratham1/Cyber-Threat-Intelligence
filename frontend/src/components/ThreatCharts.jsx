@@ -25,6 +25,7 @@ const ThreatCharts = () => {
   useEffect(() => {
     const fetchAnalytics = async () => {
       try {
+        console.log("API URL:", process.env.REACT_APP_API_URL);
         const response = await fetch(`${process.env.REACT_APP_API_URL}/api/threat-analytics`);
         const data = await response.json();
         if (data && data.top_countries) {
