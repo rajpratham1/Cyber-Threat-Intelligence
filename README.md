@@ -194,7 +194,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
+Your Name - [Pratham Kumar] - rajpratham40@gmail.com.com
 
 Project Link: [https://github.com/rajpratham1/Cyber-Threat-Intelligence](https://github.com/rajpratham1/Cyber-Threat-Intelligence)
 
