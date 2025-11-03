@@ -24,7 +24,7 @@ const MapView = ({ center, zoom }) => {
   useEffect(() => {
     const fetchThreats = async () => {
       try {
-        const response = await fetch('/api/threats');
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/threats`);
         const data = await response.json();
         if (data && data.data) {
           setThreats(data.data);
