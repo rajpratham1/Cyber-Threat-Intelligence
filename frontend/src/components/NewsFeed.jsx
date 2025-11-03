@@ -5,7 +5,7 @@ const NewsFeed = () => {
 
   useEffect(() => {
     const fetchNews = async () => {
-      const response = await fetch('/api/news');
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/news`);
       const data = await response.json();
       setArticles(data.articles || []);
     };
