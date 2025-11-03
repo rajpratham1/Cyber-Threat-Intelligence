@@ -1,80 +1,70 @@
-# Cyber Threat Intelligence Dashboard
+# Getting Started with Create React App
 
-A web-based intelligence platform that visualizes live global cyber threats, displays attack trends and analytics, and provides a live cybersecurity news feed. The application features a React frontend and a Flask backend.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
+## Available Scripts
 
-- **Live Attack Map**: Visualizes the geographical location of reported malicious IP addresses on an interactive world map using Leaflet.
-- **IP/Domain Risk Lookup**: Allows users to enter any public IP address to get a risk score, country of origin, and other details from the AbuseIPDB API.
-- **Map Zoom on Lookup**: The map automatically zooms to the location of a successfully looked-up IP address.
-- **Cybersecurity News Feed**: A dedicated section to display the latest cybersecurity news.
-- **Threat Analytics Dashboard**: A component for visualizing threat data with charts and graphs.
+In the project directory, you can run:
 
-## Tech Stack
+### `npm start`
 
-- **Frontend**: React.js, Leaflet.js
-- **Backend**: Python (Flask)
-- **APIs**: AbuseIPDB
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Getting Started
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+### `npm test`
 
-### Prerequisites
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- [Node.js and npm](https://nodejs.org/en/)
-- [Python](https://www.python.org/downloads/) and `pip`
+### `npm run build`
 
-### Backend Setup
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1.  **Navigate to the backend directory:**
-    ```sh
-    cd backend
-    ```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-2.  **Install Python dependencies:**
-    ```sh
-    pip install -r requirements.txt
-    ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-3.  **Create an environment file:**
-    Create a file named `.env` in the `backend` directory.
+### `npm run eject`
 
-4.  **Add your API key:**
-    Open the `.env` file and add your AbuseIPDB API key. You can get a free key from [abuseipdb.com](https://www.abuseipdb.com/account/api).
-    ```
-    ABUSEIPDB_API_KEY=your_actual_api_key
-    ```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-5.  **Run the backend server:**
-    ```sh
-    python app.py
-    ```
-    The backend will be running at `http://localhost:5000`.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Frontend Setup
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-1.  **Open a new terminal** and navigate to the frontend directory:
-    ```sh
-    cd frontend
-    ```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-2.  **Install Node.js dependencies:**
-    ```sh
-    npm install
-    ```
+## Learn More
 
-3.  **Run the frontend application:**
-    ```sh
-    npm start
-    ```
-    The application will open in your browser at `http://localhost:3000`.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## How to Use
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- **IP Lookup**: Enter a **public IP address** in the "IP/Domain Risk Lookup" form and click "Lookup". The results will be displayed below, and the map will zoom to the IP's location. Please note that private IP addresses (e.g., `192.168.x.x`, `10.x.x.x`) are not tracked on the public internet and will not return location data.
-- **Live Map**: The "Live Attack Map" shows markers for recently reported malicious IPs.
+### Code Splitting
 
-## License
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
