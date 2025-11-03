@@ -11,7 +11,7 @@ const IpLookupForm = ({ onIpLookup }) => {
     setError(null);
 
     try {
-      const response = await fetch(`/api/iplookup?ip=${ip}`);
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/iplookup?ip=${ip}`);
       const data = await response.json();
 
       if (data.error) {
